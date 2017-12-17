@@ -1,5 +1,3 @@
-import React from 'react';
-
 export const notebooksReducer = (state = [], action) => {
   switch (action.type) {
     case 'CREATE_NOTEBOOK_SUCCESS':

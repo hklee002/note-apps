@@ -27,10 +27,6 @@ class NoteList extends Component {
         this.fetchData();
     }
 
-    componentDidUpdate () {
-        console.log('noteList componentDidUpdate')
-    }
-
     shouldComponentUpdate (nextProps, nextState) {
         return shallowCompare(this, nextProps, nextState);
     }
@@ -54,7 +50,6 @@ class NoteList extends Component {
     }
 
     editHandler = () => {
-        console.log('edit');
         this.setState({
             isEditing: !this.state.isEditing
         })
@@ -83,7 +78,7 @@ class NoteList extends Component {
         const query = []
         this.getEditCheckboxs().map( ( item, index ) => {
             query.push({
-                id: parseInt(item.value,'10')
+                id: parseInt(item.value,10)
             })
         });
 
@@ -95,11 +90,11 @@ class NoteList extends Component {
 
     moveNoteHandler = (id) => {
         const query = []
-        this.getEditCheckboxs().map( ( item, index ) => {
+        this.getEditCheckboxs().map( ( item, index ) => (
             query.push({
-                id: parseInt(item.value,'10'), notebookId: id + ""
+                id: parseInt(item.value,10), notebookId: id + ""
             })
-        });
+        ));
 
         this.props.updateNote(query)
         .then((data) => {
@@ -157,7 +152,7 @@ class NoteList extends Component {
                             <div className="icon_inner">
                                 <Dropdown iconType="edit" className="large">
                                     { typeof this.state.notebooks.data !== 'undefined' && this.state.notebooks.data.map( (notebook, index) =>
-                                        <a href="javascript:;"
+                                        <a href="#none"
                                             key={index}
                                             onClick={ event => {
                                                 if ( event.target.className === 'disabled') {

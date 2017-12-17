@@ -142,25 +142,24 @@ app.put('/note', function (req, res) {
     var body = req.body;
 
     if ( body instanceof Array ) {
-        var result = new Promise(function(){
+
+        var result = new Promise(function( ){
             var resultData = body.forEach(function( item, index ){
                 connect.removeNote({ id : item.id })
                 .then(function (data) {
+                    if ( index === (body.length-1) ) {
+                        res.json({data});
+                    }
                 });
             });
-
-            res.json({data});
         });
     } else {
         var result = new Promise(function(){
             connect.removeNote(body)
             .then(function (data) {
-                console.log('data:',data);
                 res.json({data});
             });
         });
-
-
     }
 });
 
