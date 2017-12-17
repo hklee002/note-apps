@@ -1,0 +1,75 @@
+.notes-container .notes-content {
+    padding: 30px 100px;
+    border: none;
+    margin-top: 30px;
+}
+.notes-container .notes-header {
+    padding: 10px 100px;
+    position: relative;
+}
+.notes-container .notes-header:after {
+    clear: both;
+}
+.notes-container .notes-header .left {
+    float: left;
+}
+.notes-container .notes-header .right {
+    float: right;
+}
+.notes-container .notes-header .title{
+    color: #555;
+}
+.notes-container .note {
+    width: calc(20% - 20px);
+    min-height: 200px;
+    border: 1px solid #ededed;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 5px 20px 0px 0px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+.notes-container .note:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+    border-color: hsl(135, 35%, 55%);
+
+}
+.notes-container .note:hover .title {
+    color : hsl(135, 35%, 55%);
+}
+
+.notes-container .content {
+     width: 100%;
+}
+.notes-container .content .title {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 800;
+    padding: 10px 20px;
+    color: #333;
+}
+.notes-container .content p {
+    display: inline-block;
+    width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    word-wrap: break-word;
+    padding: 10px;
+    font-size: 12px;
+    color: #888;
+}
+.container-edit-mode, .checkbox-editing{
+    display: none;
+}
+.edit .container-edit-mode, .edit .checkbox-editing {
+    display: block;
+}
+.edit .container-edit-mode .icon_inner button {
+    font-size: 30px;
+    color: #333;
+}
+.notes-container .message-container {
+    margin-top: 3em;
+}

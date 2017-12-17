@@ -1,0 +1,101 @@
+.editor-container {
+    position: relative;
+}
+.container-editor-guide {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background-color: #ededed;
+    padding: 20px;
+}
+.container-editor-guide button {
+    display: inline-block;
+    border-radius: 5px;
+    border: 1px solid #efefef;
+    color: hsl(135, 35%, 55%);
+    padding: 10px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    min-width: 70px;
+    max-width: 80px;
+    font-size: 10px;
+    cursor: pointer;
+    float: left;
+}
+/*.container-editor-guide button:hover {
+    background-color: #3e8e41;
+}*/
+/*.container-editor-guide button:not(:last-child) {
+    border-right: none;
+}*/
+.container-editor-guide:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.editor-form {
+    padding : 5px;
+}
+.editor-form-group {
+    border : none;
+    padding : 0px;
+    margin : 0px;
+}
+
+.editor-title {
+    height: 25px;
+    font-size: 15px;
+}
+
+.editor-input {
+    display: block;
+    padding: 5px;
+    border-radius: 5px;
+    width : 98%;
+    border: 1px solid #333;
+    margin-bottom : 10px;
+}
+
+.editor-content {
+    min-height: 120px;
+    font-size: 12px;
+}
+
+.editor-submit {
+    display: block;
+    padding: 5px;
+    border-radius: 5px;
+    width : 100%;
+    font-size :15px;
+}
+
+.editor-content {
+    padding: 0 10px;
+    border: none;
+    margin: 0px;
+}
+.editor-input {
+    border: 0 none;
+    padding: 20px;
+    font-size: 14px;
+}
+
+.editor-title {
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom: 1px solid #eee;
+}
+.editor-submit {
+    float: right;
+    margin-right: 10px;
+    width: auto;
+    padding: 10px;
+}
+.editor-submit:after {
+    clear: both;
+}
+.editor-bottom {
+    width: 100%;
+    border-top: 1px solid #ddd;
+}

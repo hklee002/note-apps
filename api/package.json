@@ -1,0 +1,23 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "express.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "markdown": "^0.5.0",
+    "morgan": "^1.9.0",
+    "pocketdb": "^1.2.0"
+  },
+  "scripts": {
+    "start": "node express.js"
+  },
+  "keywords": [],
+  "author": "Lee Hyekyung",
+  "license": "ISC",
+  "devDependencies": {
+    "promise": "^8.0.1"
+  }
+}

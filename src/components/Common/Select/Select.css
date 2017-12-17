@@ -1,0 +1,23 @@
+.container-select {
+    position: relative;
+    width: 240px;
+    display: inline-block;
+    margin-left: 10px;
+    border: 1px solid #eee;
+
+}
+.container-select select {
+    height: 34px;
+    padding: 5px 0 5px 5px;
+    background: transparent;
+    border: none;
+    -webkit-appearance: button;
+    width: 230px;
+    font-size: 15px;
+}
+.container-select .sort-icon {
+    position: absolute;
+    top: 0;
+    right: 12px;
+    font-size: 24px;
+}

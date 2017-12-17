@@ -1,0 +1,83 @@
+.container-main .title-notebooks {
+    padding: 10px 30px;
+    display: block;
+    text-transform: uppercase;
+    color: #555;
+}
+
+
+.container-main .content p {
+    display: inline-block;
+    width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    word-wrap: break-word;
+    padding: 10px;
+    font-size: 12px;
+    color: #888;
+}
+
+.container-notebooks {
+    padding: 10px 50px;
+}
+
+.container-notebooks .notebook {
+    /*width: calc(25% - 16px);*/
+    width: 23%;
+    min-height: 200px;
+    max-height: 200px;
+    text-align : center;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin : 8px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.container-notebooks .notebook:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+    border-color: hsl(135, 35%, 55%);
+}
+
+.container-notebooks .notebook p{
+    font-size : 12px;
+    color : #888;
+    line-height: 12px;
+}
+
+.container-notebooks .notebook .content {
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.container-notebooks .notebook .title {
+    cursor : pointer;
+    border : 0 none;
+    padding : 10px 5px;
+    margin : 10px 5px;
+    text-align : left;
+    text-decoration: none;
+    min-width: 80%;
+    display: inline-block;
+    color : hsl(135, 35%, 55%);
+    background-color : #fff;
+    font-size:18px;
+    line-height: 18px;
+}
+
+.container-edit-mode {
+
+}
+.icon_inner {
+    font-size: 30px;
+    cursor: pointer;
+    display:inline-block;
+    margin-right: 10px;
+}
+.icon_inner:hover {
+    color: hsl(135, 35%, 55%)
+}
