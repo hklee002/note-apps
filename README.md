@@ -16,8 +16,11 @@
 2. git clone https://github.com/hklee002/note-apps.git
 3. cd note-apps
 4. npm install
-5. npm run api
-6. npm start
+5. cd api
+6. npm install 
+7. cd..
+8. npm run api
+9. npm start
 
 
 ## 참고
