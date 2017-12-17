@@ -43,13 +43,11 @@ class Editor extends Component{
     }
 
     setContentValue(value) {
-        // this.refs.contentInput.value = value.replace(/<br>/g, "\n")
         this.refs.contentInput.value = value
     }
 
     getContentValue() {
         return this.refs.contentInput.value
-        // return this.refs.contentInput.value.replace(/\n\r/g , "<br>")
     }
 
     guideButtonBarHandler = (event) => {
@@ -61,7 +59,7 @@ class Editor extends Component{
             contentInput.focus();
             let selection = document.selection.createRange();
             selection.text = insertTag;
-        } else if (contentInput.selectionStart || contentInput.selectionStart == '0') {
+        } else if (contentInput.selectionStart || contentInput.selectionStart === 0) {
             var startPosition = contentInput.selectionStart;
             var endPosition = contentInput.selectionEnd;
             let replaceText = contentValue.substring(0,startPosition) + insertTag + contentValue.substring(endPosition,contentValue.length)
@@ -107,7 +105,7 @@ class Editor extends Component{
                     <Button type="submit" className="editor-submit">Save</Button>
                 </div>
             </form>
-            {this.props.markdown == "Y" &&
+            { this.props.markdown === "Y" &&
                 <div className="container-editor-guide">
                     { this.state.markdown.map( (item, index) =>
                         <Button value={item.value} key={index} onClickHandler={this.guideButtonBarHandler.bind(this)}>{item.label}</Button>

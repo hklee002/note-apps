@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import * as actions from '../../actions'
-import { Nav, Button, Editor, Animate } from '../Common'
+import { Nav, Button, Editor } from '../Common'
 
 
 class NotebookEditor extends Component {
@@ -18,19 +18,6 @@ class NotebookEditor extends Component {
         if ( this.state.notebookId && this.state.notebookId !== "" ) {
             this.fetchData();
         }
-    }
-
-    componentWillReceiveProps(nextProps) {
-
-        // if (this.props.location.state.id !== nextProps.location.state.id) {
-        //     this.setState({
-        //         notebookId: nextProps.location.state.id
-        //     })
-        // }
-    }
-
-    componentDidUpdate () {
-        console.log('notebookEditor componentDidUpdate')
     }
 
     fetchData() {

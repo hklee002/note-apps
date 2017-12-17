@@ -11,7 +11,7 @@ const Dropdown = ( props ) => {
     return (
         <div className={`dropdown ${props.className}`}>
             <button className="icon">
-                { message != "" ?
+                { message !== "" ?
                     <div className="tooltip">{icon}
                         <Tooltip>{message}</Tooltip>
                     </div>

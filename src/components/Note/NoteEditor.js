@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import * as actions from '../../actions'
-import * as Icon from 'react-icons/lib/fa'
 import { Nav, Button, Editor } from '../Common'
 
 import './NoteEditor.css'
@@ -59,13 +58,11 @@ class NoteEditor extends Component {
 
         if ( this.state.isUpdate ) {
             note.id = this.state.noteId
-            console.log(note, 'update');
             this.props.updateNote(note)
             .then(() => {
                 this.props.history.replace('/note/' + this.state.noteId)
             })
         } else {
-            console.log(note, 'create');
             this.props.createNote(note)
             .then(() => {
                 this.props.history.replace('/notebook/' + this.state.notebookId)
