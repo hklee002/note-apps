@@ -1,0 +1,16 @@
+.container-navigation {
+    position: relative;
+    overflow: hidden;
+    padding : 20px 30px;
+    border-bottom : 1px solid #ddd;
+}
+
+.container-navigation .left {
+    float: left;
+}
+.container-navigation .right {
+    float: right;
+}
+.container-navigation:after {
+    clear: both;
+}

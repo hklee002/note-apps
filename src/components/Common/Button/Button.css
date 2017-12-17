@@ -1,0 +1,11 @@
+.btn, .btn a {
+    border: 0 none;
+    color: hsl(135, 35%, 55%);
+    font-size: 18px;
+    font-weight: 600;
+    cursor : pointer;
+}
+
+.btn a:hover,.btn:hover {
+    color: hsl(50, 75%, 55%);
+}
