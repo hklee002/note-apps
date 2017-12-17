@@ -91,7 +91,6 @@ export const removeNotebook = ( notebook ) => {
     return (dispatch) => {
         return axios.put(notebookApiUrl, notebook )
         .then( response => {
-            console.log('removeNotebook:',response.data);
             dispatch(removeNotebookSuccess(response.data))
         })
         .catch(error => {

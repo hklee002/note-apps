@@ -88,7 +88,7 @@ class NotebookList extends Component {
                                 <Link to={{pathname: '/editNotebook', state: { id: notebook.id }}}>
                                     Edit
                                 </Link>
-                                <a href="javascript:;" onClick={ event => {
+                                <a href="#none" onClick={ event => {
                                     this.removeNotebookHandler(notebook)
                                 }}>Delete</a>
                             </Dropdown>
